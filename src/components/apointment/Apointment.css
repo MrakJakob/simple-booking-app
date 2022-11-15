@@ -1,0 +1,37 @@
+.apointment_container {
+  display: flex;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.apointment_container:hover {
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.gray {
+  background-color: #f0f0f0;
+}
+
+.apointment_field {
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 470px) {
+  .apointment_container {
+    justify-content: space-between;
+  }
+
+  .apointment_field {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .apointment_field {
+    font-size: 15px;
+  }
+}
